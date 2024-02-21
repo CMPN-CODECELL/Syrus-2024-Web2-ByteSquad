@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+ }
+
+body {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+ .navbar{
+    height: 90px;;
+    background-color:#03045e;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+ }
+ .logo img{
+    width: 120px;
+ }
+.video a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #8DBDFF;
+    font-size:24px;
+
+}
+.blog {
+  color:#8DBDFF;
+}
+.connet a{
+   text-decoration: none;
+   font-size: 20px;
+   color: #8DBDFF;
+   font-size:24px;
+}
+.per{
+   color:#8DBDFF;
+}
+.workout a{
+   text-decoration: none;
+   font-size: 20px;
+   color: #8DBDFF;
+   font-size:24px;
+
+}
+.heart{
+   color:#8DBDFF;
+}
+.about a{
+   text-decoration: none;
+   font-size: 20px;
+   color: #8DBDFF;
+   font-size:24px;
+}
+.add{
+   color:#8DBDFF;
+}
+.dp img{
+   width:50px;
+   border-radius: 100%;
+}
+.mental a{
+   text-decoration: none;
+   font-size: 20px;
+   color: #8DBDFF;
+   font-size:24px;
+}
+.brain{
+   color:#8DBDFF
+}
+.user{
+   text-decoration: none;
+   font-size: 20px;
+   color: #8DBDFF;
+   font-size:24px;
+}
+.dp img{
+   width: 60px;
+   border-radius: 100%;
+}
+
+.card-container{
+   display:flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   border-style: groove;
+   margin-top: 150px;
+   
+}
+.card{
+   height: 100px;
+   width: 300px;
+   background-color: #B1D4E0;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+   margin:20px
+}
+
+.card-body{
+   height: 100px;
+   padding:16px;
+}
+.card-body h3{
+   font-size :28px;
+   margin-bottom:8px;
+}
+.card-body p{
+   color:#666;
+   font-size: 15px;
+   line-height: 1.3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Adjust the space between tiles */
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+    background-color: #e0e0e0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease;
+    height: 300px;
+    width: 400px;
+}
+
+.grid-item:hover {
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #555;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .backside {
+    opacity: 1;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+	background-color: lightgrey;
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	padding: 20px 20px;
+	display: inline-block;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.grid_container {
+	font-family: Poppins;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 10px;
+	padding: 10px;
+	line-height: 2.5rem;
+}
+
+footer a, footer p{
+	text-decoration: none;
+	color: grey;
+}
+
+footer a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+footer ul {
+	margin: auto;
+}
+
+footer li {
+	list-style: none;
+}
+
+#services {
+	left: 25%;
+}
+
+#career {
+	left: 50%;
+}
+
+#contact {
+	left: 75%;
+}
+
+#social_icons {
+	padding: 20px 20px;
+}
+
+#twitter, #github, #facebook, #instagram {
+	margin: 3%;
+
+}
+
+@media only screen and (max-width: 800px) {
+	.grid_container {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 10rem;
+		padding: 20px;
+		line-height: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.grid_container {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 10px;
+		padding: 10px;
+		line-height: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.grid_container {
+		display: block;
+	}
+}
